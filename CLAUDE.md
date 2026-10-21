@@ -92,6 +92,30 @@ Reviewed copies of outside skills; sources, commits and what was trimmed are in
   - `three` and `@react-three/fiber` / `@remotion/three` are needed only for `FlatPanel` and
     `helpers/camera`; add them to `package.json` when a shot needs them.
 
+The rest fall in three groups. Our own pipeline (Remotion + `scripts/`) stays the default; only
+switch renderer when the user asks for that look or tool.
+
+- **Fits our Remotion/FFmpeg pipeline directly:** `remotion-motion-graphics`, `video-editing`
+  (FFmpeg + Whisper jump cuts and caption styles, compare with `scripts/footage.py`), `kinetic-typography`,
+  `caption-animation`, `lower-thirds`, `short-form-video`, `talking-head-b-roll`, `video-sharingan`
+  (measures a reference video's camera moves so we can recreate them), and `gsap-*` for easing ideas.
+- **iart-ai craft packs** (about 50 skills, mostly renderer-neutral advice): use `remotion-video`,
+  `animation-principles`, `shot-composition`, `beat-sync-editing`, `motion-art-direction` and
+  `color-motion` as a quality bar for any reel; format skills such as `youtube-intro-outro`,
+  `audiogram`, `text-message-animation`, `promo-video`, `testimonial-video`, `chart-animation` and
+  `explainer-video` when the user asks for that format. Web-only skills (`page-transition-animation`,
+  `micro-interaction`, `glassmorphism` and similar) are for websites, not reels.
+- **HyperFrames (HTML + GSAP renderer, a second pipeline):** `hyperframes*` and the other HeyGen
+  skills, `motionmaxxing`, `heditor`, `bang-motion`, `showreel-motion-graphics`, `fireship-style-*`
+  and the other open-edits skills. They need their own CLI (`npx hyperframes`) and write projects
+  outside `jobs/`; keep their output in a `jobs/<name>/` folder and deliver to `/mnt/project-files/reels/<name>`.
+- **Manim:** `manim-skill`, `3brown1blue` (needs `pip install manim`).
+- **kinetic-multicam:** writes a prompt for the paid Seedance 2.0 Fast video-to-video model; it does
+  not render. Use it only when the user wants that, and add the supers in Remotion if Seedance drops them.
+
+Skills that call paid APIs (HeyGen, ElevenLabs, Gemini, Giphy and others) read keys from the
+environment; if a key is missing, say so and never invent one.
+
 ## Gotchas
 
 - Whisper downloads its model from huggingface.co on first use. Cloud sessions need that
