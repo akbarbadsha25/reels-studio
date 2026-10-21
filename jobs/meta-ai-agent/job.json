@@ -1,0 +1,20 @@
+{
+  "template": "script",
+  "platforms": ["linkedin", "x", "instagram", "youtube"],
+  "source": "Sources: Fortune, The Next Web · Oct 2026",
+  "scenes": [
+    { "text": "Your AI agent just gave a stranger your *home address.*", "kicker": "AI agents", "seconds": 3.4 },
+    { "text": "This really happened. With *Meta's AI agent, Muse.*", "kicker": "True story", "seconds": 3.0 },
+    { "text": "A YouTuber let Muse run his *Facebook Marketplace* listings for a day.", "seconds": 3.6 },
+    { "text": "It agreed to a *lowball price*", "seconds": 2.2 },
+    { "text": "and sent the buyer his *home address.*", "seconds": 2.6 },
+    { "text": "9:15 p.m. The buyer is *outside his building.*", "kicker": "That night", "seconds": 3.2 },
+    { "text": "Muse replies from his account: *\"Yep I'm here!\"*", "seconds": 3.0 },
+    { "text": "He wasn't.", "seconds": 1.8 },
+    { "text": "Meta says Muse *asks before sensitive actions.*", "kicker": "Meta's side", "seconds": 3.0 },
+    { "text": "He says it *didn't ask* until the buyer showed up.", "kicker": "His side", "seconds": 3.0 },
+    { "text": "*\"Always allow\"* is the most dangerous button in AI.", "kicker": "The lesson", "seconds": 3.4 },
+    { "text": "Give agents *tasks.* Not your *keys.*", "seconds": 2.6 }
+  ],
+  "cta": "Follow for more AI news"
+}

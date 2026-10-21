@@ -38,6 +38,7 @@ When the user hands you a script or a video (in a Claude project, uploads land i
   "platforms": ["instagram", "youtube", "linkedin", "x"],   // default: all
   "brand": { "handle": "@me", "accent": "#FFD23F" },        // overrides brand.json
   "music": "music.mp3", "musicVolume": 0.1,                  // optional, file in job folder
+  "source": "Source: Reuters, Oct 2026",                      // optional credit line along the bottom (news reels)
 
   // script template
   "scenes": [{ "text": "Hook with *accent* words", "kicker": "Tip #1", "seconds": 2.5 }],
