@@ -1,0 +1,176 @@
+{
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "frames": 480,
+  "duration_s": 20.0,
+  "cut_frames": [
+    84,
+    174,
+    252,
+    330,
+    396
+  ],
+  "cut_times_s": [
+    3.5,
+    7.25,
+    10.5,
+    13.75,
+    16.5
+  ],
+  "cuts_on_beat": [
+    true,
+    false,
+    true,
+    false,
+    true
+  ],
+  "shots": [
+    {
+      "index": 1,
+      "start_frame": 0,
+      "end_frame": 84,
+      "dur_s": 3.5,
+      "move": "truck-right",
+      "content_vx_px_s": -40.0,
+      "content_vy_px_s": 0.0,
+      "center_speed_px_s": 40.0,
+      "travel_px": null,
+      "scale_pct_s": 0.0,
+      "scale_total_pct": 0.0,
+      "ease": "linear",
+      "never_stops": true,
+      "pull_out": false,
+      "static": false,
+      "zoom": 1.0,
+      "tiltshift": false
+    },
+    {
+      "index": 2,
+      "start_frame": 84,
+      "end_frame": 174,
+      "dur_s": 3.75,
+      "move": "push-in",
+      "content_vx_px_s": 0.0,
+      "content_vy_px_s": 0.0,
+      "center_speed_px_s": 0.0,
+      "travel_px": null,
+      "scale_pct_s": 1.5113,
+      "scale_total_pct": 5.72,
+      "ease": "linear",
+      "never_stops": true,
+      "pull_out": false,
+      "static": false,
+      "zoom": 1.6,
+      "tiltshift": true
+    },
+    {
+      "index": 3,
+      "start_frame": 174,
+      "end_frame": 252,
+      "dur_s": 3.25,
+      "move": "pedestal-up",
+      "content_vx_px_s": 0.0,
+      "content_vy_px_s": 0.0,
+      "center_speed_px_s": 0.0,
+      "travel_px": [
+        0.0,
+        160.0
+      ],
+      "scale_pct_s": 0.0,
+      "scale_total_pct": 0.0,
+      "ease": "power1.inOut",
+      "never_stops": false,
+      "pull_out": false,
+      "static": false,
+      "zoom": 1.0,
+      "tiltshift": false
+    },
+    {
+      "index": 4,
+      "start_frame": 252,
+      "end_frame": 330,
+      "dur_s": 3.25,
+      "move": "pull-out",
+      "content_vx_px_s": 0.0,
+      "content_vy_px_s": 0.0,
+      "center_speed_px_s": 0.0,
+      "travel_px": null,
+      "scale_pct_s": -1.9801,
+      "scale_total_pct": -6.215,
+      "ease": "linear",
+      "never_stops": true,
+      "pull_out": true,
+      "static": false,
+      "zoom": 1.0,
+      "tiltshift": false
+    },
+    {
+      "index": 5,
+      "start_frame": 330,
+      "end_frame": 396,
+      "dur_s": 2.75,
+      "move": "static",
+      "content_vx_px_s": 0.0,
+      "content_vy_px_s": 0.0,
+      "center_speed_px_s": 0.0,
+      "travel_px": null,
+      "scale_pct_s": 0.0,
+      "scale_total_pct": 0.0,
+      "ease": "none",
+      "never_stops": false,
+      "pull_out": false,
+      "static": true,
+      "zoom": 0.6,
+      "tiltshift": false
+    },
+    {
+      "index": 6,
+      "start_frame": 396,
+      "end_frame": 480,
+      "dur_s": 3.5,
+      "move": "truck-right+pedestal-up+push-in",
+      "content_vx_px_s": -50.0,
+      "content_vy_px_s": 18.0,
+      "center_speed_px_s": 53.141,
+      "travel_px": null,
+      "scale_pct_s": 1.2072,
+      "scale_total_pct": 4.237,
+      "ease": "linear",
+      "never_stops": true,
+      "pull_out": false,
+      "static": false,
+      "zoom": 1.0,
+      "tiltshift": false
+    }
+  ],
+  "ui_events": [
+    {
+      "frame": 30,
+      "time_s": 1.25,
+      "shot": 1
+    },
+    {
+      "frame": 351,
+      "time_s": 14.625,
+      "shot": 5
+    },
+    {
+      "frame": 369,
+      "time_s": 15.375,
+      "shot": 5
+    }
+  ],
+  "audio": {
+    "bpm": 120,
+    "music": true,
+    "sfx_on_ui_events": true,
+    "sfx_on_cuts": false
+  },
+  "look": {
+    "vignette_corner_falloff": 0.3,
+    "grain_sigma_prencode": 2.0,
+    "tiltshift_shot": 2
+  },
+  "notes": "content velocity is on-screen motion of the subject; the camera moves the opposite way."
+}

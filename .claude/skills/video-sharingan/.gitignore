@@ -1,0 +1,21 @@
+# media never goes in this repo (references are usually copyrighted)
+*.mp4
+*.mov
+*.m4v
+*.webm
+*.mkv
+*.gif
+*.wav
+*.mp3
+*.aac
+# analysis outputs
+sharingan-*/
+out/
+render-analysis/
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.DS_Store
