@@ -93,7 +93,7 @@ if (job.template === "video") {
     base.durationInSeconds = scriptLength(job.scenes) + cta;
   }
 }
-Object.assign(base, { brand, music: job.music, musicVolume: job.musicVolume });
+Object.assign(base, { brand, music: job.music, musicVolume: job.musicVolume, source: job.source });
 
 // Prefer a preinstalled headless Chromium (cloud containers); otherwise Remotion downloads its own.
 const findBrowser = () => {

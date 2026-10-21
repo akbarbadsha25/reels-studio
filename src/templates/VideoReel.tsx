@@ -68,7 +68,7 @@ export const VideoReel: React.FC<VideoReelProps> = (props) => {
         />
       ) : null}
       {props.hook ? <Hook text={props.hook} props={props} font={font} /> : null}
-      <Chrome brand={props.brand} preset={props.preset} font={font} />
+      <Chrome brand={props.brand} preset={props.preset} font={font} source={props.source} />
       {props.music ? <Audio src={staticFile(props.music)} volume={props.musicVolume ?? 0.08} loop /> : null}
     </AbsoluteFill>
   );

@@ -24,6 +24,7 @@ export type CommonProps = {
   musicVolume?: number;
   captions?: Word[];
   captionStyle?: "highlight" | "pop" | "none";
+  source?: string; // small credit line along the bottom, e.g. "Source: Reuters"
 };
 
 export type ScriptReelProps = CommonProps & {

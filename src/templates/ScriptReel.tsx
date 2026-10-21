@@ -132,7 +132,7 @@ export const ScriptReel: React.FC<ScriptReelProps> = (props) => {
       {props.captions && props.captionStyle !== "none" ? (
         <Captions words={props.captions} brand={props.brand} preset={props.preset} font={font} style={props.captionStyle ?? "highlight"} />
       ) : null}
-      <Chrome brand={props.brand} preset={props.preset} font={font} />
+      <Chrome brand={props.brand} preset={props.preset} font={font} source={props.source} />
       {props.voiceover ? <Audio src={staticFile(props.voiceover)} /> : null}
       {props.music ? <Audio src={staticFile(props.music)} volume={props.musicVolume ?? 0.12} loop /> : null}
     </AbsoluteFill>
