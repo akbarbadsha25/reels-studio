@@ -1,0 +1,9 @@
+node_modules/
+out/
+build/
+# Footage and generated media stay out of git; job.json files are kept.
+jobs/*/*
+!jobs/*/job.json
+!jobs/example-script/**
+.DS_Store
+__pycache__/

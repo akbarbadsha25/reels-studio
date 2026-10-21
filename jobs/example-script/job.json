@@ -1,0 +1,12 @@
+{
+  "template": "script",
+  "platforms": ["instagram", "youtube", "linkedin", "x"],
+  "brand": { "handle": "@akbar" },
+  "scenes": [
+    { "text": "3 things nobody tells you about *posting reels*", "kicker": "Creator tips" },
+    { "text": "The first *2 seconds* decide everything", "kicker": "#1" },
+    { "text": "Captions on. *85%* watch on mute", "kicker": "#2" },
+    { "text": "Post the same idea on *every platform*", "kicker": "#3" }
+  ],
+  "cta": "Save this for later"
+}
