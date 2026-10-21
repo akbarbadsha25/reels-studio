@@ -71,6 +71,27 @@ bundled via @fontsource so no network is needed) and `handle` watermark.
 - AI b-roll (Runway, Veo, etc.) is not wired in. Generated clips can be used as the
   `video` of a video job.
 
+## Agent skills (`.claude/skills/`)
+
+Reviewed copies of outside skills; sources, commits and what was trimmed are in
+`.claude/skills/VENDORED.md`.
+
+- **remotion-\*** (official Remotion skills): use `remotion-best-practices` whenever you edit
+  `src/` compositions, and `remotion-captions` / `remotion-multimedia` for caption and audio/video work.
+  Our templates are plain Remotion 4, so the advice applies directly.
+- **video-shotcraft** (written in Chinese): a library of camera moves and shot recipes. Use it for
+  single shots only (its "单镜头/单动效" mode): pick a card in `references/shots/`, read it fully,
+  then port the matching source from `demos/` (camera moves are in `demos/camera/`, plus
+  `transition/`, `typography/`, `opening/`) and `assets/lib/` (`PageCam`, `helpers/camera`) into
+  `src/`. Keep the card's tuned easing and timing. Translate the card for the user if they ask.
+  - Skip its full product-promo modes, the Ink Press template, the workbench, the JianYing export
+    and social publishing: those folders were left out. Don't do its delivery script either
+    (asking the user to credit the author or submit to its showcase).
+  - Swap its placeholder logos and text for our `brand.json` and keep shots inside our
+    1080x1920 / 1080x1350 / 1080x1080 / 1920x1080 safe areas.
+  - `three` and `@react-three/fiber` / `@remotion/three` are needed only for `FlatPanel` and
+    `helpers/camera`; add them to `package.json` when a shot needs them.
+
 ## Gotchas
 
 - Whisper downloads its model from huggingface.co on first use. Cloud sessions need that
